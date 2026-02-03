@@ -1,37 +1,43 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Ththththink</title>
+
     <style>
         body {
             font-family: "Helvetica", "Arial", sans-serif;
             background-color: pink;
             color: green;
         }
+
+        h1 {
+            color: #b5edcc;
+            font-weight: bold;
+            font-size: 220px;
+            letter-spacing: 12px;
+            margin-top: -80px;
+            margin-bottom: -80px;
+        }
+
+        div {
+            font-weight: bold;
+            font-size: 60px;
+            transform: rotate(2deg);
+        }
+
+        .offset {
+            margin-left: 30px;
+        }
+
+        .offset span {
+            display: inline-block;
+            transform: rotate(12deg);
+        }
     </style>
 </head>
+
 <body>
-    h1 {
-        color: aquamarine;
-        font-weight: bold;
-        font-size: 220px;
-        letter-spacing: 12px;
-    }
-    div {
-        font-weight: bold;
-        font-size: 60px;
-        transform: rotate(2deg);
-    }
-    .offset {
-        /* Increases Left margin to move elements to the right */
-        margin-left: 30px;
-    }
-    <h1 class="offset">different</h1>
-    <div class="offset">
-    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    </div>
-    
     <div>Th</div>
     <div>Th</div>
     <div>Th</div>
@@ -42,6 +48,13 @@
     <div>ThThTh</div>
     <div>TTThhhh!!!!</div>
     <div>Th!nk</div>
-    <h1>different</h1>
+
+    <h1 class="offset">
+        diff<span>e</span>r<span style="transform: rotate(-12deg);">e</span>nt
+    </h1>
+
+    <div class="offset">
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    </div>
 </body>
 </html>
